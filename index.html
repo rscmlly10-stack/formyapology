@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For My Favorite Person 🤍</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #fff5f2, #f8dce5, #fff0dc);
+  color: #754a54;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 390px;
+  padding: 30px 22px;
+  border-radius: 26px;
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 10px 35px #b7838b30;
+}
+
+.heart {
+  font-size: 48px;
+  animation: beat 1.2s infinite;
+}
+
+h1 { font-size: 28px; }
+
+p {
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 13px 20px;
+  margin: 7px 4px;
+  background: #c87891;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover { background: #ae5f7a; }
+
+#message {
+  display: none;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #fff1f4;
+  line-height: 1.9;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.15); }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="heart">🤍</div>
+
+  <h1>hai, sayangku, cintakuu aku punya sesuatu nih fahim eh gamau nama yaa? sayang aja deh, sayanggg...</h1>
+
+  <p>
+    aku punya sesuatu dari hati aku yang tulus nii wkwkwk niat banget buat ngoding lg soalnya terakhir dulu banget yang lagu abt u 1975 yg ku kirim itu sayang
+  </p>
+
+  <p>
+    aku mau bilang makasih sayangg uda perjuangin aku, dan kali ini giliran aku buat bujuk dan minta maaf sam kamu, tu kan baru awal uda alay kann wkwkwk tapi emang sayangg bangett aku sama kamu bubb .thats why. aku org yg pertama bilang kata "i love u more THAN LOVE" itu laa sebab awalnya
+  </p>
+
+  <p>
+    dari riska amelia to fahimsayangku maafin semua kesalahan aku pelan pelan yaa, aku ga maksa tentang perasaan kamu buat maafin aku sekarang' ko sayangg, aku bingung mau tulis surat aku lg sakit tapi lebih ribet ini sih tapi setidaknya kalo disini kamu ga tular sama penyakit aku, klo di kertas takut ada virusnya hahaha ini juga ternyata effort yaa?, jgn ilfil aku sweet kek gini pliss haha kasih waktu laa buat aku keluarin skill dan effort aku buat org yg paling aku sayang. 🤍
+  </p>
+
+  <h3>will you forgive me bb pwiiss? 🥺</h3>
+
+  <button onclick="forgive()">
+    iyaa, aku maafin 🤍
+  </button>
+
+  <button onclick="showLove()">
+    akuu na masih ngambek 😤
+  </button>
+
+  <div id="message"></div>
+</div>
+
+<script>
+function forgive() {
+  document.getElementById("message").style.display = "block";
+  document.getElementById("message").innerHTML =
+    "makasii banyaa yaa, sayanggg 🎀🤍 " +
+    "aku bakal berusaha membuktikan lewat sikapku kali ini sayangku cintakuu, aku cinta mampus sm km jir la " +
+    "bukan cuma kata-kata. aku sayang kamu buangeett! 🫶🏻";
+}
+
+function showLove() {
+  document.getElementById("message").style.display = "block";
+  document.getElementById("message").innerHTML =
+    "umm, gapapa deh sayanggg 🥺🤍 " +
+    "kamu boleh butuh waktu. aku tetap mau " +
+    "dengerin perasaanmu dan memperbaiki kesalahanku sayangg asalkan we are still love each other. 💌";
+}
+</script>
+
+</body>
+</html>
